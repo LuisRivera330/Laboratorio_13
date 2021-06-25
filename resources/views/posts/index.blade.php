@@ -11,7 +11,7 @@
     </a>
     <a href="{{ route('users.edit', Auth::user()->id) }}" style="position: relative;left: 1250px">
         <button class="btn btn-primary">
-        {{ __('Details User') }}
+        {{ __('Details User') }}ssssssss
         </button>
     </a>
     @endauth
