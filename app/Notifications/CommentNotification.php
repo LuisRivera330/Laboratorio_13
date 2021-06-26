@@ -58,7 +58,10 @@ class CommentNotification extends Notification
     {
         return [
             'content' => $this->comment->content,
+            'user_id' => $this->comment->user_id,
+            'post_id' => $this->comment->post_id,
             'time' => Carbon::now()->diffForHumans(),
+
         ];
     }
 }

@@ -22,4 +22,5 @@ Route::delete('posts/myPosts/{id}', [PostController::class, 'destroy'])->name('p
 Route::get('user/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
 Route::put('user/{user}',[UserController::class, 'update'])->name('users.update');
 Route::get('user/delete',[UserController::class, 'destroy'])->name('users.delete');
+Route::get('/notificaciones', [CommentController::class, 'notificaciones']);
 Auth::routes();
